@@ -1,1 +1,6 @@
 1. Learning Vuejs
+05 November 2020
+Vuejs Adalah framework javascript yang digunkan untuk membuat sebuah halaman web yang reaktif dan interaktif secara mudah
+a. Perbedaan penggunaan vue 
+   - Penggunaan vue untuk sebagian part pada page yang biasnaya disebut dengan Widget approach pada multi-page-aplication (Beberapa Page masih di render pada backend server).
+   - Penggunaan vue untuk seluruh page biasanay di sebut dengan SPA (Single Page Application) server hanya mengirim 1 page HTML. setelah itu vue mengontrol segala sesuatu yang di perlihatkan page
