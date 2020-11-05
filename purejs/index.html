@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
-    <title>Vanilla JS</title>
+    <title>Vue JS</title>
 </head>
 <body>
 
     <div id="app">
         <div>
             <label for="tujuan">Tujuan</label>
-            <input type="text" id="tujuan">
-            <button>Tambah Tujuan</button>
+            <input type="text" id="tujuan" v-model="masukanValue">
+            <button v-on:click="tambahTujuan()">Tambah Tujuan</button>
         </div>
-
         <ul>
-
+            <li v-for="tuju in tujuan">{{tuju}}</li>
         </ul>
+        <button v-on:click="clearTujuan()">Clear List</button>
     </div>
-    
+
+    <!-- Vuejs Package -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
