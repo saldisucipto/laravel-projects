@@ -4,3 +4,10 @@ Vuejs Adalah framework javascript yang digunkan untuk membuat sebuah halaman web
 a. Perbedaan penggunaan vue 
    - Penggunaan vue untuk sebagian part pada page yang biasnaya disebut dengan Widget approach pada multi-page-aplication (Beberapa Page masih di render pada backend server).
    - Penggunaan vue untuk seluruh page biasanay di sebut dengan SPA (Single Page Application) server hanya mengirim 1 page HTML. setelah itu vue mengontrol segala sesuatu yang di perlihatkan page
+
+07 November 2020
+1. Pada Vue kita dapat menampilkan data dengan menggunkan string interpolation pada element html kita menggunkan {{ propertiDataPadaVue }}
+2. Untuk mengusu value pada sebuah attribute html seperti value href='' kita menggunkan syntaks v-bind:href='namaAttribut' atau dengan  :href='namaAttribut'
+3. method di deklarasikan dengan methods : {} dan di sisipikan di html sebagai function {{method()}}
+4. menggunkan data pada method dengan cara menambhkan syntaks 'this.dataYangDipakai'
+5. v-html digunkan untuk merendar tag html pada string interpolation vue
