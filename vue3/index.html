@@ -14,18 +14,19 @@
     <script src="https://unpkg.com/vue@next"></script>
     <!-- javascript -->
     <script src="scrips.js" defer></script>
-    <title>Vuejs Core Konsep</title>
+    <title>Vuejs Events</title>
   </head>
   <body>
     <header>
-      <h1>Vue Course Goals</h1>
+      <h1>Vue Events</h1>
     </header>
-    <section id="user-goal">
-      <h2>My Course Goal</h2>
+    <section id="events">
+      <h2>My Vue Events</h2>
       <!-- Menerima String Interpolation Value dari Vue Js -->
       <!-- <p>{{ outputGoal() }}</p> -->
-      <p v-html="outputGoal()"></p>
-      <p>Learn More <a v-bind:href="vueLink"> About Vue </a></p>
+      <button v-on:click="counter++">Add</button>
+      <button v-on:click="kalkulasi()">Remove</button>
+      <p>Result <a> {{ counter }} </a></p>
     </section>
   </body>
 </html>

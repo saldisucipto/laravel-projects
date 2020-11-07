@@ -4,23 +4,20 @@ const app = Vue.createApp({
   // data deklrasi
   data() {
     return {
-      courseGoalA: "<i> Menyelesaikan Course Ini </i>",
-      courseGoalB: "Lanjut Untuk Course Ini",
-      vueLink: "https://v3.vuejs.org/guide/",
+      counter: 0,
     };
   },
 
   methods: {
-    // function
-    outputGoal() {
-      const randomNumber = Math.random();
-      if (randomNumber < 0.5) {
-        return this.courseGoalA;
+    kalkulasi() {
+      counter = this.counter;
+      if (counter <= 0) {
+        return (this.counter = 0);
       } else {
-        return this.courseGoalB;
+        return this.counter--;
       }
     },
   },
 });
 // mount app Intance
-app.mount("#user-goal");
+app.mount("#events");
